@@ -11,6 +11,6 @@ needed to execute the code.
 Data analysis can be, and often is, performed without recording and sharing one or more of these components -
 resulting in an analysis that cannot be reproduced. 
 Does this matter? What are, if any, the consequences of such a non-reproducible data analysis? 
-And is ommitting one of the components needed for a reproducible data analysis "worse" than another?
-This talk will try to answer these questions through discussions of real-life examples of non-reproducible data analsyses 
+And is omitting one of the components needed for a reproducible data analysis "worse" than another?
+This talk will try to answer these questions through discussions of real-life examples of non-reproducible data analyses 
 and their consequences in an attempt to illustrate the critical importance of reproducibility in data analysis.
