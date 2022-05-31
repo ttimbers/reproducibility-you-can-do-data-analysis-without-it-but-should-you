@@ -1,0 +1,91 @@
+---
+title: "Reproducibility: you can do data analysis without it, but should you?"  
+author: 
+  - "Tiffany Timbers (UBC)"
+  - "`r Sys.Date()`"
+date: 'bit.ly/SES_Workshop_2022'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%'
+      titleSlideClass: [top, left]
+      ratio: '16:9'
+---
+
+## Introduction
+
+What is reproducibility
+
+---
+
+## Levels that non-reproducible analysis can have an impact on 
+
+- Data Scientist
+- Organization
+- Beyond (e.g., Society)
+
+---
+
+## Potential impacts on the Data Scientist
+
+
+---
+
+## Potential impacts on the Organization
+
+---
+
+## Potential impacts beyond
+
+1. Case 1
+
+2. Case 2
+
+3. Case 3
+
+---
+
+## Case 1
+
+---
+
+## Case 2
+
+
+---
+
+## Case 3
+
+
+---
+
+## Impact levels revisited
+
+
+---
+
+## Summary
+
+
+---
+
+## Acknowledgements
+
+
+---
+
+
+class: inverse, center, middle
+
+# Questions?
+
+
+
+### Tiffany Timbers
+
+#### talk slides: *[https://bit.ly/TBD](https://bit.ly/TBD)*
