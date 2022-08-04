@@ -15,11 +15,54 @@ output:
       slideNumberFormat: '%current%'
       titleSlideClass: [top, left]
       ratio: '16:9'
+
 ---
 
-## Introduction
+class: middle
 
-What is reproducibility
+## What is **reproducibility**?
+
+#### Reaching the same result given the same input, computational methods, and conditions<sup>1</sup>
+
+<br>
+
+*Where:*
+
+input = data
+
+computational methods = computer code
+
+conditions = computational environment (e.g., programming language & it’s dependencies)
+
+.footnote[
+[1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
+]
+
+---
+
+This is distinct from **replicability**, 
+which obtaining consistent results across studies 
+aimed at answering the same scientific question, 
+each of which has obtained its own data.<sup>1</sup>
+
+.footnote[
+[1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
+]
+
+---
+
+## How does this fit in with a "Theory and Methods for Building Successful Data Analyses"?
+
+Reproducible data analysis can "help" make an analysis successful by helping build "trust" in the analysis.
+This trust is important for stakeholders, of whom the application of the analysis impacts.
+
+For example, it can:
+
+1. provide evidence that the results or product could be regenerated given the same input computational methods, and conditions
+
+2. is transparent - a human can audit all steps taken during analysis
+
+3. if also version controlled, there is also a complete record of how and why analysis decisions were made
 
 ---
 
@@ -33,6 +76,15 @@ What is reproducibility
 
 ## Potential impacts on the Data Scientist
 
+We asked graduate and undergraduate Data Scientists in training for real life stories of workflow challenges and failures they had faced in the past (either at school or on the job).
+
+From the 76 stories we collected, three main themes emerged:
+
+1.
+
+2.
+
+3.
 
 ---
 
