@@ -4,7 +4,7 @@
     <title>Reproducibility: you can do data analysis without it, but should you?</title>
     <meta charset="utf-8" />
     <meta name="author" content="Tiffany Timbers (UBC)" />
-    <meta name="author" content="2022-08-04" />
+    <meta name="author" content="2022-08-05" />
     <script src="libs/header-attrs-2.11/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: top, left, title-slide
 
+.title[
 # Reproducibility: you can do data analysis without it, but should you?
+]
+.author[
 ### Tiffany Timbers (UBC)
-### 2022-08-04
+]
+.author[
+### 2022-08-05
+]
+.date[
 ### bit.ly/SES_Workshop_2022
+]
 
 ---
 
@@ -68,6 +76,14 @@ For example, it can:
 
 ---
 
+## How does this fit in with a "Theory and Methods for Building Successful Data Analyses"?
+
+Reproducible data analysis can "help" make an analysis successful by helping with efficiency of performing the analysis.
+
+This is less "important" from an ethical lense, but extremely important from a financial/business perspective and I hope to show you that this is the most obvious pain point for the data scientist and organization when reproducibility failures occur. 
+
+---
+
 ## Reproducibility failures as reported by Data Scientists
 
 We asked graduate and undergraduate Data Scientists (in training) 
@@ -97,9 +113,25 @@ and they included:
 
 2. loss of reputation (reputation)
 
-3. increased costs of hiring someone else to redo the work (cost)
+3. work being discarded due to lack of trustworthiness (work discarded)
 
-4. work being discarded due to lack of trustworthiness (work discarded)
+4. increased costs of hiring someone else to redo the work (cost)
+
+---
+
+## Some representative stories
+
+*"When I was working with my last company, my team had a large dataset stored regarding some traffic data in the database and I wrote a script to retrieve the data and do data analysis in a single jupyter notebook, without putting proper documentation nor comments. The project was then tabled for a few months. But then a summer intern came and was assigned to pick up the project, so I had to explain everything in the notebook to her but I had totally no idea what I wrote since the logic was not quite straight-forward. It was also a hard time to set the environment up in her laptop since we had a bunch of libraries and dependencies used in the notebook. We finally took a week or two to set the environment up and transfer the knowledge to the intern, which was really a waste of time."*
+
+- documentation + time
+
+*"In my line of work, my colleagues and I heavily relied on SQL queries to withdraw data from database. She always forgot to save the queries while just sending me an excel file to read. Sometimes (Most of the time) when I cross checked the data, the result didn't match. It usually required hours of troubleshooting to figure out where the gap was between my query and her data. ¯\_(ツ)_/¯"*
+
+- code + time
+
+*“When I was working in my last job creating a database, I was working between two different computer systems. I had written the code on my local computer (a windows) but it was being deployed on a Linux command line system. To debug my code it was easier to do on my computer but certain lines of code were specific to the linux machine vs. the window machine. While I was using version control I had a really hard time keeping track of which script was which and it caused me to waste lots of time and energy trying to fix the issue”*
+
+- environments + time
 
 ---
 
@@ -113,13 +145,34 @@ and they included:
 
 ## Potential impacts on the Data Scientist
 
+- Time, which means decreased productivity!
+
+- Reputation! Embarrassment! Loss of confidence!
+
 ---
 
 ## Potential impacts on the Organization
 
+- Increased salary costs paid out (due to analysis taking increased time)
+
+- Reputation! Embarrassment!
+
+- Liability!
+
 ---
 
 ## Potential impacts beyond
+
+
+- Irreproducible (and thus, untrustworthy) analysis published in journals and taken as "truth"
+
+- Retracted articles persisting in the literature from their citation previous to the retraction
+
+- Delays in rollout of initiatives or products the analysis was used for
+
+---
+
+## Example cases of analysis with reproducibility failures with various levels of impact
 
 1. Case 1
 
@@ -217,6 +270,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
