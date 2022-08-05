@@ -3,7 +3,7 @@ title: "Reproducibility: you can do data analysis without it, but should you?"
 author: 
   - "Tiffany Timbers (UBC)"
   - "`r Sys.Date()`"
-date: 'bit.ly/SES_Workshop_2022'
+date: 'bit.ly/timbers-jsm-2022'
 output:
   xaringan::moon_reader:
     lib_dir: libs
