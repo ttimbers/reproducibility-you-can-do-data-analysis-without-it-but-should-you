@@ -188,43 +188,65 @@ and they included:
 
 ## Example cases of analysis with reproducibility failures with various levels of impact
 
-1. Case 1
+1. Negative commentary on: International evaluation of an AI system for breast cancer screening
 
-2. Case 2
-
-3. Case 3
+2. RETRACTED ARTICLE: Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
 
 ---
 
-## Case 1
+## Negative commentary on: International evaluation of an AI system for breast cancer screening
+
+- [Original article](https://www.nature.com/articles/s41586-019-1799-6)
+- [Commentary](https://www.nature.com/articles/s41586-020-2766-y)
 
 ---
 
-## Case 2
+## RETRACTED ARTICLE: Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
 
+- [Original article](https://www.nature.com/articles/s41598-021-85227-0)
+- [Retraction notice](https://www.nature.com/articles/s41598-021-98683-5)
 
----
+A research paper was published in March 2021 that claimed that a drug, Favipiravir, was a safe and effective alternative to another drug, hydroxychloroquine (a medication commonly used to prevent or treat malaria), in mild or moderate COVID-19 infected patients.
 
-## Case 3
+In September, 2021 the paper we retracted by the editors - in part due to reproducibility issues:
 
+“After concerns were brought to the Editors’ attention after publication, the raw data underlying the study were requested. The authors provided several versions of their dataset. Post-publication peer review confirmed that none of these versions fully recapitulates the results presented in the cohort background comparisons, casting doubt on the reliability of the data. Additional concerns were raised about the randomisation procedure, as the equal distribution of male and female patients is unlikely unless sex is a parameter considered during randomisation. However, based on the clarification provided by the authors, sex was not considered during this process. The Editors therefore no longer have confidence in the results and conclusions presented.”
+
+The problem doesn’t just stop once the article is retracted… Between the time the article was published and retracted, the article was cited 17 times!
+
+```{r}
+knitr::include_graphics("img/covid-retraction-citations.png")
+```
 
 ---
 
 ## Impact levels revisited
 
+Non-reproducible analysis can have an impact on:
+
+- Data Scientist
+
+- Organization
+
+- Beyond (e.g., Society)
 
 ---
 
 ## Summary
 
 
+
+
 ---
 
 ## Acknowledgements
 
+
 - UBC Master of Data Science students
 
 - UBC DSCI 310 students
+
+- Joel Ostblom, Assitant Professor of Teaching, Dept. of Statistics, UBC
 
 ---
 
