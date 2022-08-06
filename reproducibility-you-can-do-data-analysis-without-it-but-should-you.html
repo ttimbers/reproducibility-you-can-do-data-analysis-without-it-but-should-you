@@ -36,34 +36,39 @@ class: middle
 
 ## What is **reproducibility**?
 
-#### Reaching the same result given the same input, computational methods, and conditions&lt;sup&gt;1&lt;/sup&gt;
+### *Reproducibility* is reaching the same result given the same input, computational methods, and conditions&lt;sup&gt;1&lt;/sup&gt;
+
+.footnote[
+[1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
+]
+
+
 
 &lt;br&gt;
 
 *Where:*
 
 input = data
-
-computational methods = computer code
-
-conditions = computational environment (e.g., programming language &amp; it’s dependencies)
-
-.footnote[
-[1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
-]
+&lt;br&gt;computational methods = computer code
+&lt;br&gt;conditions = computational environment
 
 ---
 
-This is distinct from **replicability**, 
-which obtaining consistent results across studies 
-aimed at answering the same scientific question, 
-each of which has obtained its own data.&lt;sup&gt;1&lt;/sup&gt;
+class: middle, center
 
-.footnote[
-[1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
-]
+This is distinct from **replicability**, **robust**, 
+and **generalizable**.
+
+&lt;br&gt;
+
+&lt;img src="img/repro-in-context.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+Source: [Joelle Pineau (2022). Improving Reproducibility in Machine Learning Research.](https://www.youtube.com/watch?v=e9CujtFbmmQ) 
+&lt;br&gt;[2022 Toronto Workshop on Reproducibility.](https://www.youtube.com/watch?v=e9CujtFbmmQ)
 
 ---
+
+class: middle
 
 ## How does this fit in with a "Theory and Methods for Building Successful Data Analyses"?
 
@@ -80,13 +85,19 @@ For example, it can:
 
 ---
 
+class: middle
+
 ## How does this fit in with a "Theory and Methods for Building Successful Data Analyses"?
 
-Reproducible data analysis can "help" make an analysis successful by helping with efficiency of performing the analysis.
+- Reproducible data analysis can "help" make an analysis successful by helping with efficiency of performing the analysis.
 
-This is less "important" from an ethical lense, but extremely important from a financial/business perspective and I hope to show you that this is the most obvious pain point for the data scientist and organization when reproducibility failures occur. 
+- This is less "important" from an ethical lense, but extremely important from a financial/business perspective.
+
+- This appears to be the most obvious pain point for the data scientist and organization when reproducibility failures occur. 
 
 ---
+
+class: middle
 
 ## Reproducibility failures as reported by Data Scientists
 
@@ -107,6 +118,8 @@ four main themes related to failures in reproducibility emerged:
 
 ---
 
+class: middle
+
 ## Impacts of reproducibility failures as reported by Data Scientists
 
 These 76 stories also described the impacts 
@@ -123,7 +136,11 @@ and they included:
 
 ---
 
-## Some representative stories
+class: middle, inverse, center
+
+## Some representative stories...
+
+---
 
 *"When I was working with my last company, my team had a large dataset stored regarding some traffic data in the database and I wrote a script to retrieve the data and do data analysis in a single jupyter notebook, without putting proper documentation nor comments. The project was then tabled for a few months. But then a summer intern came and was assigned to pick up the project, so I had to explain everything in the notebook to her but I had totally no idea what I wrote since the logic was not quite straight-forward. It was also a hard time to set the environment up in her laptop since we had a bunch of libraries and dependencies used in the notebook. We finally took a week or two to set the environment up and transfer the knowledge to the intern, which was really a waste of time."*
 
