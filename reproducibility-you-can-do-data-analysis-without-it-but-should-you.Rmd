@@ -412,26 +412,28 @@ knitr::include_graphics("img/covid-retraction-citations.png")
 
 ---
 
+class: middle
+
 ## Summary
 
-Reproducibility means reaching the same result given the same data, code, and computational environment.
+- Reproducibility means reaching the same result given the same data, code, and computational environment.
 
-<br>
+- Reproducibility should be included in a theory for successful data analysis because:
 
-Reproducibility should be included in a theory for successful data analysis because:
+  1. It contributes to a trustworthy analysis
+  2. It increases the efficiency of performing the analysis
 
-1. It contributes to a trustworthy analysis
-2. It increases the efficiency of performing the analysis
+- The most commonly reported reproducibility failures are version control, code, documentation and environments. The most commonly reported cost is time.
 
-<br>
+- Non-reproducible analysis can have an impact on:
 
-Non-reproducible analysis can have an impact on:
-
-- Data Scientist
-- Organization
-- Beyond (e.g., Science & Society)
+  - Data Scientist
+  - Organization
+  - Beyond (e.g., Science & Society)
 
 ---
+
+class: middle
 
 ## Acknowledgements
 
