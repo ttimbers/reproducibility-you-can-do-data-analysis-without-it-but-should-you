@@ -42,6 +42,51 @@ style_duo_accent(
 )
 ```
 
+```{r data analysis of stories, include = FALSE}
+library(tidyverse)
+
+story_data <- read_csv("data/workflows-stories-from-the-trenches-themes.csv") |> 
+ drop_na(reproducibility_theme, cost_theme)
+
+number_of_stories <- nrow(story_data)
+
+repro_theme_data <- story_data |> 
+  select(-cost_theme) |> 
+  mutate(reproducibility_theme = str_extract(reproducibility_theme, "[a-z,]+ ?[a-z,]+ ?[a-z,]+"),
+         repro_theme_1 = str_extract(reproducibility_theme, "[a-z]+ ?[a-z]*"),
+         repro_theme_2 = str_extract(reproducibility_theme, ",[a-z]+ ?[a-z]*"),
+         repro_theme_2 = str_replace(repro_theme_2, ",", "")) |>
+  pivot_longer(repro_theme_1:repro_theme_2, names_to = "col_to_drop", values_to = "repro_theme") |>
+  drop_na(repro_theme) |> 
+  select(-col_to_drop)
+
+repro_theme_summary <- repro_theme_data |> 
+  group_by(repro_theme) |> 
+  summarise(perc = n() / number_of_stories * 100)
+
+cost_theme_data <- story_data |> 
+  select(-reproducibility_theme) |> 
+  mutate(cost_theme = str_extract(cost_theme, "[a-z,]+ ?[a-z,]+ ?[a-z,]+"),
+         cost_theme_1 = str_extract(cost_theme, "[a-z]+ ?[a-z]*"),
+         cost_theme_2 = str_extract(cost_theme, ",[a-z]+ ?[a-z]*"),
+         cost_theme_2 = str_replace(cost_theme_2, ",", "")) |>
+  select(-cost_theme) |> 
+  pivot_longer(cost_theme_1:cost_theme_2, names_to = "col_to_drop", values_to = "cost_theme") |>
+  drop_na(cost_theme) |> 
+  select(-col_to_drop)
+
+cost_theme_summary <- cost_theme_data |> 
+  group_by(cost_theme) |> 
+  summarise(perc = n() / number_of_stories * 100)
+
+cost_theme_chart <- ggplot(cost_theme_summary, aes(x = perc,
+                                                   y = reorder(cost_theme, perc))) +
+  geom_bar(stat = "identity") +
+  labs(x = "Percentage of stories reporting cost",
+       y = "Cost of reproducibility failure") +
+  theme_minimal()
+```
+
 class: middle
 
 ## What is **reproducibility**?
@@ -115,7 +160,7 @@ We asked graduate and undergraduate Data Scientists (in training)
 for real life stories of data analysis workflow challenges and failures 
 they had faced in the past (either at school or on the job).
 
-From the 76 stories we collected, 
+From the `r number_of_stories` stories we collected, 
 four main themes related to failures in reproducibility emerged:
 
 1. documentation
