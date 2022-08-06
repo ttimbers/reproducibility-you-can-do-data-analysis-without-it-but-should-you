@@ -142,27 +142,56 @@ class: middle, inverse, center
 
 ---
 
+class: middle
+
 *"When I was working with my last company, my team had a large dataset stored regarding some traffic data in the database and I wrote a script to retrieve the data and do data analysis in a single jupyter notebook, without putting proper documentation nor comments. The project was then tabled for a few months. But then a summer intern came and was assigned to pick up the project, so I had to explain everything in the notebook to her but I had totally no idea what I wrote since the logic was not quite straight-forward. It was also a hard time to set the environment up in her laptop since we had a bunch of libraries and dependencies used in the notebook. We finally took a week or two to set the environment up and transfer the knowledge to the intern, which was really a waste of time."*
 
-- documentation + time
+-- Master of Data Science student, UBC
+
+&lt;br&gt;
+
+- **Reproducibility failure &gt; insufficient documentation** 
+- **Impact of reproducibility failure &gt; loss of time**
+
+---
+
+class: middle
 
 *"In my line of work, my colleagues and I heavily relied on SQL queries to withdraw data from database. She always forgot to save the queries while just sending me an excel file to read. Sometimes (Most of the time) when I cross checked the data, the result didn't match. It usually required hours of troubleshooting to figure out where the gap was between my query and her data. ¯\_(ツ)_/¯"*
 
-- code + time
+-- Master of Data Science student, UBC
+
+&lt;br&gt;
+
+- **Reproducibility failure &gt; methods not recorded as code** 
+- **Impact of reproducibility failure &gt; loss of time**
+
+---
+
+class: middle
 
 *“When I was working in my last job creating a database, I was working between two different computer systems. I had written the code on my local computer (a windows) but it was being deployed on a Linux command line system. To debug my code it was easier to do on my computer but certain lines of code were specific to the linux machine vs. the window machine. While I was using version control I had a really hard time keeping track of which script was which and it caused me to waste lots of time and energy trying to fix the issue”*
 
-- environments + time
+-- Master of Data Science student, UBC
+
+&lt;br&gt;
+
+- **Reproducibility failure &gt; lack of a shippable and shareable computational environment** 
+- **Impact of reproducibility failure &gt; loss of time**
 
 ---
+
+class: middle
 
 ## Levels that non-reproducible analysis can have an impact on 
 
 - Data Scientist
 - Organization
-- Beyond (e.g., Society)
+- Beyond (e.g., Science &amp; Society)
 
 ---
+
+class: middle
 
 ## Potential impacts on the Data Scientist
 
@@ -172,15 +201,21 @@ class: middle, inverse, center
 
 ---
 
+class: middle
+
 ## Potential impacts on the Organization
 
 - Increased salary costs paid out (due to analysis taking increased time)
 
 - Reputation! Embarrassment!
 
+- Work that must be discarded
+
 - Liability!
 
 ---
+
+class: middle
 
 ## Potential impacts beyond
 
@@ -193,31 +228,53 @@ class: middle, inverse, center
 
 ---
 
-## Example cases of analysis with reproducibility failures with various levels of impact
+class: middle
 
-1. Negative commentary on: International evaluation of an AI system for breast cancer screening
+## Two cases of analysis with reproducibility failures
 
-2. RETRACTED ARTICLE: Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
+1. International evaluation of an AI system for breast cancer screening
+
+2. Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
 
 ---
 
-## Negative commentary on: International evaluation of an AI system for breast cancer screening
+class: middle
+
+## International evaluation of an AI system for breast cancer screening
 
 - [Original article](https://www.nature.com/articles/s41586-019-1799-6)
 - [Commentary](https://www.nature.com/articles/s41586-020-2766-y)
 
 ---
 
-## RETRACTED ARTICLE: Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
+class: middle
+
+.pull-left[
+&lt;img src="img/covid-19-retraction.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+A research paper was published in March 2021 that claimed that a drug, Favipiravir, was a safe and effective alternative to another drug, hydroxychloroquine (a medication commonly used to prevent or treat malaria), in mild or moderate COVID-19 infected patients.
+
+In September, 2021 the paper we retracted by the editors - in part due to reproducibility issues.
+]
+
+.pull-right[
+
+&lt;br&gt;
+
+*“After concerns were brought to the Editors’ attention after publication, the raw data underlying the study were requested. The authors provided several versions of their dataset. Post-publication peer review confirmed that none of these versions fully recapitulates the results presented in the cohort background comparisons, casting doubt on the reliability of the data. Additional concerns were raised about the randomisation procedure, as the equal distribution of male and female patients is unlikely unless sex is a parameter considered during randomisation. However, based on the clarification provided by the authors, sex was not considered during this process. The Editors therefore no longer have confidence in the results and conclusions presented.”*
+
+&lt;br&gt;
 
 - [Original article](https://www.nature.com/articles/s41598-021-85227-0)
 - [Retraction notice](https://www.nature.com/articles/s41598-021-98683-5)
 
-A research paper was published in March 2021 that claimed that a drug, Favipiravir, was a safe and effective alternative to another drug, hydroxychloroquine (a medication commonly used to prevent or treat malaria), in mild or moderate COVID-19 infected patients.
+]
 
-In September, 2021 the paper we retracted by the editors - in part due to reproducibility issues:
+---
 
-“After concerns were brought to the Editors’ attention after publication, the raw data underlying the study were requested. The authors provided several versions of their dataset. Post-publication peer review confirmed that none of these versions fully recapitulates the results presented in the cohort background comparisons, casting doubt on the reliability of the data. Additional concerns were raised about the randomisation procedure, as the equal distribution of male and female patients is unlikely unless sex is a parameter considered during randomisation. However, based on the clarification provided by the authors, sex was not considered during this process. The Editors therefore no longer have confidence in the results and conclusions presented.”
+class: middle
+
+## Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
 
 The problem doesn’t just stop once the article is retracted… Between the time the article was published and retracted, the article was cited 17 times!
 
