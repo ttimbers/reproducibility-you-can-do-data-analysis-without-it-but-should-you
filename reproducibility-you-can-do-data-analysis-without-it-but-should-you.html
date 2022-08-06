@@ -4,7 +4,7 @@
     <title>Reproducibility: you can do data analysis without it, but should you?</title>
     <meta charset="utf-8" />
     <meta name="author" content="Tiffany Timbers (UBC)" />
-    <meta name="author" content="2022-08-05" />
+    <meta name="author" content="2022-08-06" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -19,7 +19,7 @@ class: top, left, title-slide
 ### Tiffany Timbers (UBC)
 ]
 .author[
-### 2022-08-05
+### 2022-08-06
 ]
 .date[
 ### bit.ly/timbers-jsm-2022
@@ -42,8 +42,6 @@ class: middle
 [1] Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
 ]
 
-
-
 &lt;br&gt;
 
 *Where:*
@@ -63,8 +61,8 @@ and **generalizable**.
 
 &lt;img src="img/repro-in-context.png" width="50%" style="display: block; margin: auto;" /&gt;
 
-Source: [Joelle Pineau (2022). Improving Reproducibility in Machine Learning Research.](https://www.youtube.com/watch?v=e9CujtFbmmQ) 
-&lt;br&gt;[2022 Toronto Workshop on Reproducibility.](https://www.youtube.com/watch?v=e9CujtFbmmQ)
+Source: [Joelle Pineau et al., (2020). Improving Reproducibility in Machine Learning Research](https://arxiv.org/pdf/2003.12206.pdf)
+&lt;br&gt;[(A Report from the NeurIPS 2019 Reproducibility Program). arXiv:2003.12206](https://arxiv.org/pdf/2003.12206.pdf)
 
 ---
 
@@ -241,14 +239,51 @@ class: middle
 class: middle
 
 .pull-left[
-&lt;img src="img/addendum-international-eval-ai.png" width="100%" style="display: block; margin: auto;" /&gt;
-]
 
-.pull-right[
+&lt;img src="img/addendum-international-eval-ai.png" width="100%" style="display: block; margin: auto;" /&gt;
+
 - [Original article](https://www.nature.com/articles/s41586-019-1799-6)
 - [Commentary](https://www.nature.com/articles/s41586-020-2766-y)
 - [Reply to commentary](https://www.nature.com/articles/s41586-020-2767-x)
 - [Addendum to article](https://www.nature.com/articles/s41586-020-2679-9)
+]
+
+
+.pull-right[
+
+A research paper was published in January 2020 
+that claimed they had created an artificial intelligence (AI) system 
+that beat human experts in predicting breast cancer.
+
+In October 2020, a matters arising commentary was published in response to the article,
+which in particular described many reproducibility issues with the original paper.
+The commentary also proposed recommendations to avoid such issues in the future.
+
+In October 2020, the original authors published a reply to the commentary 
+where they acknowledged some of the reproducibility issues 
+and how they addressed them in an addendum also published that month, 
+as well as attempted to justify why they were not able, or willing, 
+to address other reproducibility issues pointed out in the commentary.
+
+]
+
+---
+
+class: middle
+
+### International evaluation of an AI system for breast cancer screening
+
+- The reproducibility issues in this paper are not unique, and have been observed to occur in many machine learning (and other data analysis) papers &lt;sup&gt;1&lt;/sup&gt;.
+
+- A positive result from this paper and commentary is the creation of a [Machine Learning Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf) by Joelle Pineau
+
+- The use of this checklist at NeurIPS 2019, 
+a prominent machine learning conference, 
+correlated with an increase in researchers including code with papers submitted 
+to 74.4% (up from &lt; 50% at NeurIPS 2018)&lt;sup&gt;1&lt;/sup&gt;.
+
+.footnote[
+[1] [Pineau et al., (2020), Improving Reproducibility in Machine Learning Research (A Report from the NeurIPS 2019 Reproducibility Program) arXiv:2003.12206](https://arxiv.org/pdf/2003.12206.pdf)
 ]
 
 ---
@@ -321,6 +356,20 @@ Non-reproducible analysis can have an impact on:
 - UBC DSCI 310 students
 
 - Joel Ostblom, Assitant Professor of Teaching, Dept. of Statistics, UBC
+
+---
+
+## References
+
+1. Committee on Reproducibility and Replicability in Science (2019), Reproducibility and Replicability in Science, Washington, D.C.: National Academies Press. https://doi.org/10.17226/25303
+2. Dabbous et al. (2021a). Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial. Scientific Reports. 11:7282 https://www.nature.com/articles/s41598-021-85227-0
+3. Dabbous et al. (2021b). Retraction Note: Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial. Scientific Reports. 11:18983 https://www.nature.com/articles/s41598-021-98683-5
+4. Haibe-Kains et al. (2020). Transparency and reproducibility in artificial intelligence. Nature. 586, E14–E16 https://www.nature.com/articles/s41586-020-2766-y
+5. McKinney et al. (2020a). International evaluation of an AI system for breast cancer screening. Nature. 577, 89–94 https://www.nature.com/articles/s41586-019-1799-6
+6. McKinney et al. (2020b). Reply to: Transparency and reproducibility in artificial intelligence. Nature. 586, E17–E18 https://www.nature.com/articles/s41586-020-2767-x
+7. McKinney et al. (2020c). Addendum: International evaluation of an AI system for breast cancer screening. Nature. 586, E19 https://www.nature.com/articles/s41586-020-2679-9
+8. Pineau, J. (2020). The Machine Learning Reproducibility Checklist https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf
+9. Pineau, J. et al., (2020). Improving Reproducibility in Machine Learning Research (A Report from the NeurIPS 2019 Reproducibility Program) [arXiv:2003.12206](https://arxiv.org/pdf/2003.12206.pdf)
 
 ---
 
