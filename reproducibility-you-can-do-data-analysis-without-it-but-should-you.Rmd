@@ -186,7 +186,7 @@ four main themes related to failures in reproducibility emerged:
 
 .pull-right[
 
-```{r repro_theme_chart, fig.width=7, fig.height=4}
+```{r repro_theme_chart, fig.width=7, fig.height=4, fig.retina=2}
 repro_theme_chart
 ```
 
@@ -207,7 +207,7 @@ with the most common by far being loss of time.
 
 .pull-right[
 
-```{r cost_theme_chart, fig.width=7, fig.height=4}
+```{r cost_theme_chart, fig.width=7, fig.height=4, fig.retina=2}
 cost_theme_chart
 ```
 
