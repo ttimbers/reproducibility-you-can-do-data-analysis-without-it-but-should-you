@@ -252,10 +252,18 @@ class: middle
 
 class: middle
 
-## International evaluation of an AI system for breast cancer screening
+.pull-left[
+```{r addendum-international-eval-ai, out.width="100%"}
+knitr::include_graphics("img/addendum-international-eval-ai.png")
+```
+]
 
+.pull-right[
 - [Original article](https://www.nature.com/articles/s41586-019-1799-6)
 - [Commentary](https://www.nature.com/articles/s41586-020-2766-y)
+- [Reply to commentary](https://www.nature.com/articles/s41586-020-2767-x)
+- [Addendum to article](https://www.nature.com/articles/s41586-020-2679-9)
+]
 
 ---
 
@@ -288,7 +296,7 @@ In September, 2021 the paper we retracted by the editors - in part due to reprod
 
 class: middle
 
-## Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
+### Safety and efficacy of favipiravir versus hydroxychloroquine in management of COVID-19: A randomised controlled trial
 
 The problem doesn’t just stop once the article is retracted… Between the time the article was published and retracted, the article was cited 17 times!
 
