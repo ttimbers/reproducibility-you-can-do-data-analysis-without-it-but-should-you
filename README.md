@@ -15,4 +15,4 @@ And is omitting one of the components needed for a reproducible data analysis "w
 This talk will try to answer these questions through discussions of real-life examples of non-reproducible data analyses 
 and their consequences in an attempt to illustrate the critical importance of reproducibility in data analysis.
 
-- [Link to slides](https://ttimbers.github.io/reproducibility-you-can-do-data-analysis-without-it-but-should-you/reproducibility-you-can-do-data-analysis-without-it-but-should-you.html) STILL A WORK IN PROGRESS!
+- [Link to slides](https://ttimbers.github.io/reproducibility-you-can-do-data-analysis-without-it-but-should-you/reproducibility-you-can-do-data-analysis-without-it-but-should-you.html)
